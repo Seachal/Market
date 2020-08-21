@@ -1,0 +1,29 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/wangxing/Documents/androidProject/keplerSDK/src/main/AndroidManifest.xml:1:1-13:12
+INJECTED from /Users/wangxing/Documents/androidProject/keplerSDK/src/main/AndroidManifest.xml:1:1-13:12
+INJECTED from /Users/wangxing/Documents/androidProject/keplerSDK/src/main/AndroidManifest.xml:1:1-13:12
+	package
+		ADDED from /Users/wangxing/Documents/androidProject/keplerSDK/src/main/AndroidManifest.xml:2:5-27
+		INJECTED from /Users/wangxing/Documents/androidProject/keplerSDK/src/main/AndroidManifest.xml
+		INJECTED from /Users/wangxing/Documents/androidProject/keplerSDK/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/wangxing/Documents/androidProject/keplerSDK/src/main/AndroidManifest.xml:1:12-70
+application
+ADDED from /Users/wangxing/Documents/androidProject/keplerSDK/src/main/AndroidManifest.xml:6:5-9:19
+	android:allowBackup
+		ADDED from /Users/wangxing/Documents/androidProject/keplerSDK/src/main/AndroidManifest.xml:7:9-35
+uses-sdk
+INJECTED from /Users/wangxing/Documents/androidProject/keplerSDK/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/wangxing/Documents/androidProject/keplerSDK/src/main/AndroidManifest.xml
+INJECTED from /Users/wangxing/Documents/androidProject/keplerSDK/src/main/AndroidManifest.xml
+INJECTED from /Users/wangxing/Documents/androidProject/keplerSDK/src/main/AndroidManifest.xml
+INJECTED from /Users/wangxing/Documents/androidProject/keplerSDK/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/wangxing/Documents/androidProject/keplerSDK/src/main/AndroidManifest.xml
+		ADDED from /Users/wangxing/Documents/androidProject/keplerSDK/src/main/AndroidManifest.xml
+		INJECTED from /Users/wangxing/Documents/androidProject/keplerSDK/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/wangxing/Documents/androidProject/keplerSDK/src/main/AndroidManifest.xml
+		ADDED from /Users/wangxing/Documents/androidProject/keplerSDK/src/main/AndroidManifest.xml
+		INJECTED from /Users/wangxing/Documents/androidProject/keplerSDK/src/main/AndroidManifest.xml

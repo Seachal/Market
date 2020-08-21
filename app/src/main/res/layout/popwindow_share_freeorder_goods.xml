@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:id="@+id/share_image"
+        android:layout_width="@dimen/x784"
+        android:layout_height="@dimen/y1000"
+        android:layout_marginTop="@dimen/y160"
+        android:background="#fff"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/main_photo"
+            android:layout_width="@dimen/x784"
+            android:layout_height="@dimen/y562"
+            android:background="#fff"
+            android:paddingBottom="@dimen/y50"
+            android:paddingLeft="@dimen/x131"
+            android:paddingRight="@dimen/x131"
+            android:paddingTop="@dimen/y50"
+            android:scaleType="fitXY"
+            android:src="@drawable/goods" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="#fff"
+                android:paddingBottom="@dimen/y30"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/y30"
+                    android:background="#fff"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.dajukeji.hslz.view.CircleImageView
+                        android:id="@+id/user_head"
+                        android:layout_width="@dimen/x88"
+                        android:layout_height="@dimen/y88"
+                        android:background="#fff"
+                        android:src="@drawable/head_image"
+                        app:border_color="#e8e8e8" />
+
+                    <TextView
+                        android:id="@+id/user_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:text="某某xxxx"
+                        android:textColor="@color/goods_name_color"
+                        android:background="#fff"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#fff" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:paddingLeft="@dimen/y30"
+                    android:paddingTop="@dimen/y30"
+                    android:id="@+id/tv_share_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    android:text="我免费领取了行行行行行行快来免费领取产品吧"
+                    android:textColor="#343434"
+                    android:textSize="11sp" />
+
+                <TextView
+                    android:paddingLeft="@dimen/y30"
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="0sp"
+                    android:layout_weight="1"
+                    android:background="#fff"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:text="快来和我一起免费领取吧"
+                    android:textColor="#e71611"
+                    android:textSize="10sp" />
+                |
+
+                <LinearLayout
+                    android:paddingLeft="@dimen/y30"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_zero_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="￥0"
+                        android:textColor="#e71611"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/market_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:text="市场价￥0"
+                        android:textColor="#343434"
+                        android:textSize="10sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingBottom="@dimen/y30"
+                android:background="#fff" />
+
+            <LinearLayout
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:background="#fff"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:background="#fff"
+                    android:paddingTop="@dimen/y30"
+                    android:paddingBottom="@dimen/y50"
+                    android:paddingRight="@dimen/x30"
+                    android:text="长按二维码查看"
+                    android:textColor="#343434"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:id="@+id/tv_qr_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingRight="@dimen/x30"
+                    android:paddingBottom="@dimen/y30"
+                    android:background="#fff"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/app_icon" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <android.support.v4.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y640"
+        android:orientation="vertical"
+        android:background="#fff"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y75"
+                android:layout_marginBottom="@dimen/y40"
+                style="@style/popText"
+                android:text="邀请好友助力，免单轻松到手"
+                />
+            <View
+                android:layout_gravity="center_horizontal"
+                android:layout_width="@dimen/x882"
+                android:layout_height="0.5sp"
+                android:background="@color/lineGray"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="@dimen/x882"
+            android:layout_height="0.5sp"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/lineGray"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y60"
+            android:layout_marginBottom="@dimen/y60"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/wx_friend"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <ImageView
+                    android:layout_width="@dimen/x200"
+                    android:layout_height="@dimen/y200"
+                    android:src="@drawable/share_friend1"/>
+                <TextView
+                    style="@style/popText"
+                    android:text="微信好友"
+                    android:layout_marginTop="@dimen/y30"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/wx_zone"
+                android:layout_width="0sp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="@dimen/x200"
+                    android:layout_height="@dimen/y200"
+                    android:src="@drawable/share_friend" />
+
+                <TextView
+                    style="@style/popText"
+                    android:layout_marginTop="@dimen/y30"
+                    android:text="朋友圈" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/reload_rl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/noconnect_icon"
+            android:layout_width="@dimen/x378"
+            android:layout_height="@dimen/y300"
+            android:src="@drawable/no_connect"
+            android:layout_centerInParent="true"/>
+        <TextView
+            android:layout_below="@+id/noconnect_icon"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y50"
+            android:id="@+id/noconnect_tt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/load_failed"/>
+        <Button
+            android:id="@+id/reload_button"
+            android:text="@string/reload"
+            android:textColor="@color/white"
+            android:layout_marginTop="@dimen/y100"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/noconnect_tt"
+            android:background="@drawable/reload_button_bg"
+            android:layout_width="@dimen/x330"
+            android:layout_height="@dimen/x90" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/backgroundGray"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/y20"
+        android:paddingBottom="@dimen/y20"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/item_order_list_img"
+            android:layout_width="@dimen/x260"
+            android:layout_height="@dimen/y260"
+            android:scaleType="fitXY"
+            android:background="@drawable/goods"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30">
+
+            <TextView
+                android:id="@+id/item_order_list_name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:text="加厚不锈钢加厚不锈钢"
+                android:textSize="13sp"
+                android:textColor="@color/tabUnselected"/>
+
+            <TextView
+                android:id="@+id/item_order_list_good_sku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y25"
+                android:text="颜色 ：黑色"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_order_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y20"
+                android:paddingTop="@dimen/y5"
+                android:paddingBottom="@dimen/y5"
+                android:paddingLeft="@dimen/x15"
+                android:paddingRight="@dimen/x15"
+                android:visibility="gone"
+                android:text="七天退货"
+                android:background="@drawable/bg_order_button_orange"
+                android:textColor="@color/redOrange"
+                android:textSize="13sp"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/item_order_list_price_linear"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_order_list_present_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="￥29.60"
+                android:textColor="@color/tabUnselected"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/item_order_list_original_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="￥40.60"
+                android:textColor="#999999"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/item_order_list_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y10"
+                android:layout_gravity="right"
+                android:text="x 1"
+                android:textColor="#999999"
+                android:textSize="13sp" />
+            <TextView
+                android:id="@+id/tv_return_status"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:gravity="bottom"
+                android:layout_weight="1"
+                android:textSize="13sp"
+                android:textColor="@color/redOrange"
+                android:layout_gravity="right"
+                android:text=""
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y10"
+        android:background="@color/white"
+        />
+</LinearLayout>

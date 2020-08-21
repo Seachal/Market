@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.dajukeji.hslz.view.SelectedButton
+        android:id="@+id/dialog_spec_select_ok"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y160"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/redOrange"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <ScrollView
+        android:id="@+id/dialog_spec_select_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/dialog_spec_select_ok"
+        android:background="@color/white"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/x80"
+            android:paddingRight="@dimen/x50"
+            android:paddingBottom="@dimen/y130">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/dialog_spec_select_recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:background="@color/white"
+                android:scrollbars="none" />
+            <!--android:overScrollMode="never"-->
+
+            <RelativeLayout
+                android:id="@+id/rl_select_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="购买数量"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:orientation="horizontal">
+
+                    <com.dajukeji.hslz.view.SelectedButton
+                        android:id="@+id/dialog_spec_select_reduce"
+                        android:layout_width="@dimen/x90"
+                        android:layout_height="@dimen/y70"
+                        android:background="@color/line_gray_color"
+                        android:gravity="center"
+                        android:text="一" />
+
+                    <TextView
+                        android:id="@+id/dialog_spec_select_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/y70"
+                        android:background="@null"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:paddingLeft="@dimen/x20"
+                        android:paddingRight="@dimen/x20"
+                        android:text="1" />
+
+                    <com.dajukeji.hslz.view.SelectedButton
+                        android:id="@+id/dialog_spec_select_add"
+                        android:layout_width="@dimen/x90"
+                        android:layout_height="@dimen/y70"
+                        android:background="@color/line_gray_color"
+                        android:gravity="center"
+                        android:text="+" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y491"
+        android:layout_above="@id/dialog_spec_select_scrollView">
+
+        <View
+            android:id="@+id/dialog_spec_select_transparent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y83"
+            android:background="@android:color/transparent" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y408"
+            android:layout_below="@id/dialog_spec_select_transparent"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/dialog_spec_select_close"
+                android:layout_width="@dimen/x66"
+                android:layout_height="@dimen/y66"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/x30"
+                android:scaleType="fitXY"
+                android:src="@drawable/shut_down" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/x50"
+                android:layout_marginRight="@dimen/x50"
+                android:background="@color/line_gray_color" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/spec_lin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x80"
+            android:background="@drawable/btn_order_detail_copy"
+            android:orientation="vertical"
+            android:padding="1dp">
+
+            <com.dajukeji.hslz.view.RoundImageView
+                android:id="@+id/dialog_spec_select_pic"
+                android:layout_width="@dimen/x460"
+                android:layout_height="@dimen/y460"
+                android:scaleType="fitXY"
+                android:src="@drawable/goods" />
+        </LinearLayout>
+
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/x50"
+            android:layout_marginTop="@dimen/y120"
+            android:layout_marginRight="@dimen/x30"
+            android:layout_marginBottom="10dp"
+            android:layout_toEndOf="@+id/spec_lin"
+            android:layout_toRightOf="@+id/spec_lin"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/goods_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="2"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/v0_price"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/v0_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toTopOf="@+id/dialog_spec_select_tips"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/goods_name">
+
+                <TextView
+                    android:id="@+id/dialog_spec_select_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥29.9"
+                    android:textColor="@color/theme_orange_color"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/dialog_spec_select_stock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:maxLines="1"
+                    android:text="库存111件"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/dialog_spec_select_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="请选择: 规格"
+                android:textColor="#000"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/v0_price" />
+
+        </android.support.constraint.ConstraintLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

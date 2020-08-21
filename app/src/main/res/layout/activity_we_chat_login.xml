@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/iv_wechat_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="@dimen/x270"
+        android:layout_height="@dimen/y270"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y360"
+        android:src="@drawable/app_icon" />
+
+    <ImageView
+        android:id="@+id/iv_wechat_login"
+        android:layout_width="@dimen/x700"
+        android:layout_height="@dimen/y100"
+        android:layout_below="@id/iv_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/y200"
+        android:src="@drawable/icon_wechat_login" />
+
+    <ImageView
+        android:id="@+id/iv_account_login"
+        android:layout_width="@dimen/x700"
+        android:layout_height="@dimen/y100"
+        android:layout_below="@+id/iv_wechat_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:src="@drawable/icon_account_login" />
+</RelativeLayout>

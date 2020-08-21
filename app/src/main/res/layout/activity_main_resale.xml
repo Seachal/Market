@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.resale.MainResaleActivity">
+
+    <!--标题-->
+    <include
+        android:id="@+id/titleBar"
+        layout="@layout/title_bar" />
+
+    <ImageView
+        android:id="@+id/iv_help"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="center"
+        android:src="@mipmap/help"
+        app:layout_constraintBottom_toBottomOf="@id/titleBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/titleBar" />
+
+    <!--底部导航按钮-->
+    <View
+        android:id="@+id/v_bottom_nav"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="#FFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_nav_center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/v_bottom_nav"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/v_bottom_nav"
+        app:layout_constraintTop_toTopOf="@+id/v_bottom_nav"
+        android:src="@drawable/icon_add_resale"
+        app:srcCompat="@drawable/icon_add_resale" />
+
+    <View
+        android:id="@+id/click_nav_left"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/iv_nav_center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/v_bottom_nav" />
+
+    <View
+        android:id="@+id/click_nav_right"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_nav_center"
+        app:layout_constraintTop_toTopOf="@+id/v_bottom_nav" />
+
+    <ImageView
+        android:id="@+id/iv_nav_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_nav_left"
+        app:layout_constraintEnd_toStartOf="@+id/iv_nav_center"
+        app:layout_constraintStart_toStartOf="@+id/v_bottom_nav"
+        app:layout_constraintTop_toTopOf="@+id/v_bottom_nav"
+        android:src="@drawable/icon_resale_goods"
+        app:srcCompat="@drawable/icon_resale_goods" />
+
+    <ImageView
+        android:id="@+id/iv_nav_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/tv_nav_right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/iv_nav_center"
+        app:layout_constraintTop_toTopOf="@+id/v_bottom_nav"
+        android:src="@drawable/icon_book"
+        app:srcCompat="@drawable/icon_book" />
+
+    <TextView
+        android:id="@+id/tv_nav_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="转卖市场"
+        android:textColor="#666"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/v_bottom_nav"
+        app:layout_constraintEnd_toEndOf="@+id/iv_nav_left"
+        app:layout_constraintStart_toStartOf="@+id/iv_nav_left"
+        app:layout_constraintTop_toBottomOf="@id/iv_nav_left" />
+
+    <TextView
+        android:id="@+id/tv_nav_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="交易记录"
+        android:textColor="#666"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/v_bottom_nav"
+        app:layout_constraintEnd_toEndOf="@+id/iv_nav_right"
+        app:layout_constraintStart_toStartOf="@+id/iv_nav_right"
+        app:layout_constraintTop_toBottomOf="@id/iv_nav_right" />
+
+    <!--中心列表-->
+    <com.jcodecraeer.xrecyclerview.XRecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/iv_nav_center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleBar" />
+
+
+</android.support.constraint.ConstraintLayout>

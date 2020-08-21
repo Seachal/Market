@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="138dp"
+    android:background="#fff">
+
+    <LinearLayout
+        android:id="@+id/ll_valid_goods"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/store_checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="10sp"
+            android:background="@null"
+            android:button="@null"
+            android:drawableLeft="@drawable/shopping_cart_checkbox"
+            android:gravity="center"
+            android:minHeight="13sp"
+            android:minWidth="13sp"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/pict_url"
+            android:layout_width="87dp"
+            android:layout_height="87dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/goods" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@id/sb"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="南疏林地史蒂夫仍塞飞洛中仍佣兵夺天地茜"
+                android:textColor="#121212"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_goods_spec"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_title"
+                android:layout_marginTop="10sp"
+                android:text="一个装"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:id="@+id/ll_amount_choice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/final_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="￥135.00"
+                    android:textColor="@color/redOrange"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <com.dajukeji.hslz.view.AmountView
+                    android:id="@+id/amount_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20sp"
+                    app:btnTextSize="13sp"
+                    app:btnWidth="27sp"
+                    app:tvTextSize="4sp"
+                    app:tvWidth="37sp"></com.dajukeji.hslz.view.AmountView>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_remove"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="@color/redOrange"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="移入"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="收藏夹"
+                android:textColor="#ffffff"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/item_delete"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="#ff3232"
+            android:gravity="center"
+            android:text="删除"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/backgroundGray"
+        >
+    </LinearLayout>
+</LinearLayout>

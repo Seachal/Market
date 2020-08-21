@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root_view"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/include_titlebar_ll"
+        layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/content_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <include
+                android:id="@+id/include_top_ll"
+                layout="@layout/include_goods_detail_top" />
+
+            <android.support.v4.widget.SwipeRefreshLayout
+                android:id="@+id/swipe_refresh"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <android.support.v4.widget.NestedScrollView
+                    android:id="@+id/good_detail_scrollview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <!--产品信息-->
+                        <include
+                            android:id="@+id/good_detail_info_ll"
+                            layout="@layout/goods_detail_group_by_people" />
+                        <!--评价-->
+                        <include
+                            android:id="@+id/good_detail_evaluate_ll"
+                            layout="@layout/include_goods_detail_evaluate" />
+                        <!--详情-->
+                        <include
+                            android:id="@+id/gooddetail_weblayout"
+                            layout="@layout/include_gooddetail_webview"/>
+                        <!--推荐-->
+                        <include
+                            android:id="@+id/good_detail_recommend_ll"
+                            layout="@layout/include_good_detail_recommend" />
+                    </LinearLayout>
+                </android.support.v4.widget.NestedScrollView>
+
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <include layout="@layout/include_compare_goods_bottom" />
+        </LinearLayout>
+        <include layout="@layout/include_reload_ll"/>
+        <ImageView
+            android:id="@+id/go_top_iv"
+            android:src="@drawable/return_top"
+            android:visibility="gone"
+            android:layout_width="@dimen/x160"
+            android:layout_height="@dimen/y160"
+            android:padding="@dimen/x20"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/x100"
+            android:layout_marginBottom="@dimen/y200"/>
+    </RelativeLayout>
+
+</LinearLayout>

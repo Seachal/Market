@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!--指定路径和转换规则-->
+    <root-path
+        name="root_path"
+        path="." />
+    <!-- 就是说
+    <root-path — 我可以将SD卡目录下
+    path="." — 的任何文件
+    name="root_path" — 传递给任意程序 -->
+
+    <!--理解例子
+    <files-path — Context.getFileDir()目录
+    <files-path — Context.getCacheDir()目录
+    <external-files — Environment.getExternalStorageDirectory()目录
+    path="images/" — images文件夹下文件
+    name="camera_photos" — 传递给图片编辑器
+    -->
+</paths>

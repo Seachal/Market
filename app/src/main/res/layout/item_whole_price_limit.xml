@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="@dimen/y168"
+    android:background="#fff"
+    android:paddingTop="@dimen/y25"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/y5"
+        >
+        <TextView
+            android:id="@+id/tv_time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="本场结束时间还剩余:"
+            android:textColor="@color/title_black_color"
+            />
+        <com.dajukeji.hslz.view.SnapUpCountDownTimerView
+            android:id="@+id/snap_time"
+            android:layout_marginLeft="@dimen/x25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:viewSize="18"
+            app:SnapMode="SNAP_WHOLE_PRICE"
+            >
+        </com.dajukeji.hslz.view.SnapUpCountDownTimerView>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="每人每轮，每个产品限购一次"
+        android:textColor="@color/exchange_option"
+        />
+
+</LinearLayout>

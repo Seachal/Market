@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "/Users/wangxing/Documents/androidProject/keplerSDK/build/intermediates/res/merged/release/layout/more_select_item.xml",
+        "source": "/Users/wangxing/Documents/androidProject/keplerSDK/src/main/res/layout/more_select_item.xml"
+    },
+    {
+        "merged": "/Users/wangxing/Documents/androidProject/keplerSDK/build/intermediates/res/merged/release/layout/kepler_simple_dialog_lay.xml",
+        "source": "/Users/wangxing/Documents/androidProject/keplerSDK/src/main/res/layout/kepler_simple_dialog_lay.xml"
+    },
+    {
+        "merged": "/Users/wangxing/Documents/androidProject/keplerSDK/build/intermediates/res/merged/release/layout/neterror_layout.xml",
+        "source": "/Users/wangxing/Documents/androidProject/keplerSDK/src/main/res/layout/neterror_layout.xml"
+    },
+    {
+        "merged": "/Users/wangxing/Documents/androidProject/keplerSDK/build/intermediates/res/merged/release/layout/web_bottom_layout.xml",
+        "source": "/Users/wangxing/Documents/androidProject/keplerSDK/src/main/res/layout/web_bottom_layout.xml"
+    },
+    {
+        "merged": "/Users/wangxing/Documents/androidProject/keplerSDK/build/intermediates/res/merged/release/layout/sdk_title_layout.xml",
+        "source": "/Users/wangxing/Documents/androidProject/keplerSDK/src/main/res/layout/sdk_title_layout.xml"
+    },
+    {
+        "merged": "/Users/wangxing/Documents/androidProject/keplerSDK/build/intermediates/res/merged/release/layout/item_tab_layout.xml",
+        "source": "/Users/wangxing/Documents/androidProject/keplerSDK/src/main/res/layout/item_tab_layout.xml"
+    },
+    {
+        "merged": "/Users/wangxing/Documents/androidProject/keplerSDK/build/intermediates/res/merged/release/layout/kepler_mid_lin.xml",
+        "source": "/Users/wangxing/Documents/androidProject/keplerSDK/src/main/res/layout/kepler_mid_lin.xml"
+    }
+]

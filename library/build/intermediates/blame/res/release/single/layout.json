@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/wangxing/Documents/androidProject/library/build/intermediates/res/merged/release/layout/pull_to_refresh_header_vertical.xml",
+        "source": "/Users/wangxing/Documents/androidProject/library/src/main/res/layout/pull_to_refresh_header_vertical.xml"
+    },
+    {
+        "merged": "/Users/wangxing/Documents/androidProject/library/build/intermediates/res/merged/release/layout/pull_to_refresh_header_horizontal.xml",
+        "source": "/Users/wangxing/Documents/androidProject/library/src/main/res/layout/pull_to_refresh_header_horizontal.xml"
+    }
+]

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y110"
+    android:gravity="center_vertical"
+    android:background="#fff">
+    <com.dajukeji.hslz.view.CircleImageView
+        android:id="@+id/cv_help_user"
+        android:layout_width="@dimen/x70"
+        android:layout_height="@dimen/y70"
+        android:src="@drawable/head_image"
+        />
+    <TextView
+        android:id="@+id/tv_help_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/goods_info_tip"
+        android:layout_marginLeft="@dimen/x20"
+        android:text="某某x"
+        />
+    <TextView
+        android:id="@+id/tv_help_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2018-10-25 键单"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/subsidy_user_time"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="13sp"
+        />
+        <!--android:layout_marginLeft="@dimen/ali_auth_space_20"-->
+</LinearLayout>

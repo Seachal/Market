@@ -1,0 +1,3 @@
+include ':app', ':okhttputils', ':keplerSDK', ':IMsdk'
+include ':library'
+project(':IMsdk').projectDir = new File('sdk')

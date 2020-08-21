@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/see_more_tt"
+        android:text="查看更多"
+        android:layout_centerVertical="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_centerVertical="true"
+        android:src="@drawable/right_arrow"
+        android:layout_toRightOf="@+id/see_more_tt"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_width="@dimen/x45"
+        android:layout_height="@dimen/y45" />
+</RelativeLayout>

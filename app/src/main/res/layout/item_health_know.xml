@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/y30"
+    android:background="#f9f9f9">
+
+    <TextView
+        android:id="@+id/health_know_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y40"
+        android:layout_marginBottom="@dimen/y50"
+        android:textSize="16sp"
+        android:textColor="@color/fontGray"
+        android:layout_gravity="center_horizontal"
+        android:text="2017-10-12 12:25:58" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="@dimen/y40"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/x60"
+        android:layout_marginRight="@dimen/x60"
+        >
+        <TextView
+            android:id="@+id/health_know_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="#050505"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="急急急急急急急急急急急急急急急急急信息" />
+        <ImageView
+            android:id="@+id/health_know_image"
+            android:layout_width="@dimen/x880"
+            android:layout_height="@dimen/y360"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="fitXY"
+            android:layout_marginTop="10sp"
+            />
+
+        <View
+            android:layout_marginTop="@dimen/y40"
+            android:layout_width="match_parent"
+            android:layout_height="2px"
+            android:background="@color/lineGray"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="#343434"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/y40"
+                android:layout_alignParentLeft="true"
+                android:text="阅读全文" />
+
+            <ImageView
+                android:id="@+id/message"
+                android:layout_width="15sp"
+                android:gravity="center_vertical"
+                android:src="@drawable/right_arrow"
+                android:layout_marginTop="@dimen/y40"
+                android:layout_alignParentRight="true"
+                android:layout_height="15sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

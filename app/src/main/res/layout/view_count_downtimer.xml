@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@android:color/white"
+              android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:id="@+id/ll_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_snap_index"
+        android:paddingTop="@dimen/y5"
+        android:paddingBottom="@dimen/y5"
+        android:paddingRight="@dimen/x5"
+        android:paddingLeft="@dimen/x5"
+        >
+
+        <TextView
+            android:id="@+id/tv_hour_decade"
+            style="@style/RushBuyCountDownTimerViewStyle"/>
+
+        <TextView
+            android:id="@+id/tv_hour_unit"
+            style="@style/RushBuyCountDownTimerViewStyle"
+            android:layout_marginLeft="1dp"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/colon_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        style="@style/SnapUpViewColon"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_minute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_snap_index"
+        android:paddingTop="@dimen/y5"
+        android:paddingBottom="@dimen/y5"
+        android:paddingRight="@dimen/x5"
+        android:paddingLeft="@dimen/x5"
+        >
+
+        <TextView
+            android:id="@+id/tv_min_decade"
+            style="@style/RushBuyCountDownTimerViewStyle"/>
+
+        <TextView
+            android:id="@+id/tv_min_unit"
+            style="@style/RushBuyCountDownTimerViewStyle"
+            android:layout_marginLeft="1dp"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/colon_minute"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        style="@style/SnapUpViewColon"
+        />
+
+
+    <LinearLayout
+        android:id="@+id/ll_second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_snap_index"
+        android:paddingTop="@dimen/y5"
+        android:paddingBottom="@dimen/y5"
+        android:paddingRight="@dimen/x5"
+        android:paddingLeft="@dimen/x5"
+        >
+
+        <TextView
+            android:id="@+id/tv_sec_decade"
+            style="@style/RushBuyCountDownTimerViewStyleRed"/>
+
+        <TextView
+            android:id="@+id/tv_sec_unit"
+            style="@style/RushBuyCountDownTimerViewStyleRed"
+            android:layout_marginLeft="1dp"/>
+    </LinearLayout>
+
+</LinearLayout>

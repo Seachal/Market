@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/wangxing/Documents/androidProject/library/build/intermediates/res/merged/release/drawable/indicator_bg_bottom.xml",
+        "source": "/Users/wangxing/Documents/androidProject/library/src/main/res/drawable/indicator_bg_bottom.xml"
+    },
+    {
+        "merged": "/Users/wangxing/Documents/androidProject/library/build/intermediates/res/merged/release/drawable/indicator_bg_top.xml",
+        "source": "/Users/wangxing/Documents/androidProject/library/src/main/res/drawable/indicator_bg_top.xml"
+    }
+]

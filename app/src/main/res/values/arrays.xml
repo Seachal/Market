@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+
+    <string-array name="my_order_array">
+        <item>全部</item>
+        <item>待付款</item>
+        <item>待发货</item>
+        <item>待收货</item>
+        <item>待评价</item>
+    </string-array>
+
+    <string-array name="my_order_status_array">
+        <item></item>
+        <item>wait_for_pay</item>
+        <item>wait_for_send</item>
+        <item>wait_for_receive</item>
+        <item>wait_for_comment</item>
+    </string-array>
+
+    <string-array name="refund_array">
+        <item>待用户处理</item>
+        <item>全部</item>
+    </string-array>
+
+    <string-array name="apply_after_sale_status_array">
+        <item>申请退货</item>
+        <item>审核通过</item>
+        <item>寄回产品</item>
+        <item>商家确认</item>
+        <item>退款成功</item>
+    </string-array>
+
+    <string-array name="apply_after_apply_status_array">
+        <item>申请退款</item>
+        <item>卖家确认</item>
+        <item>退款成功</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "/Users/wangxing/Documents/androidProject/keplerSDK/build/intermediates/res/merged/release/drawable-xxhdpi-v4/kepler_back_pressed.png",
+        "source": "/Users/wangxing/Documents/androidProject/keplerSDK/src/main/res/drawable-xxhdpi/kepler_back_pressed.png"
+    },
+    {
+        "merged": "/Users/wangxing/Documents/androidProject/keplerSDK/build/intermediates/res/merged/release/drawable-xxhdpi-v4/select_bg.9.png",
+        "source": "/Users/wangxing/Documents/androidProject/keplerSDK/src/main/res/drawable-xxhdpi/select_bg.9.png"
+    },
+    {
+        "merged": "/Users/wangxing/Documents/androidProject/keplerSDK/build/intermediates/res/merged/release/drawable-xxhdpi-v4/white.png",
+        "source": "/Users/wangxing/Documents/androidProject/keplerSDK/src/main/res/drawable-xxhdpi/white.png"
+    },
+    {
+        "merged": "/Users/wangxing/Documents/androidProject/keplerSDK/build/intermediates/res/merged/release/drawable-xxhdpi-v4/kepler_selcet_more_pressed.png",
+        "source": "/Users/wangxing/Documents/androidProject/keplerSDK/src/main/res/drawable-xxhdpi/kepler_selcet_more_pressed.png"
+    },
+    {
+        "merged": "/Users/wangxing/Documents/androidProject/keplerSDK/build/intermediates/res/merged/release/drawable-xxhdpi-v4/neterror.png",
+        "source": "/Users/wangxing/Documents/androidProject/keplerSDK/src/main/res/drawable-xxhdpi/neterror.png"
+    },
+    {
+        "merged": "/Users/wangxing/Documents/androidProject/keplerSDK/build/intermediates/res/merged/release/drawable-xxhdpi-v4/seclect_item_history.png",
+        "source": "/Users/wangxing/Documents/androidProject/keplerSDK/src/main/res/drawable-xxhdpi/seclect_item_history.png"
+    },
+    {
+        "merged": "/Users/wangxing/Documents/androidProject/keplerSDK/build/intermediates/res/merged/release/drawable-xxhdpi-v4/seclect_item_no_has_message.png",
+        "source": "/Users/wangxing/Documents/androidProject/keplerSDK/src/main/res/drawable-xxhdpi/seclect_item_no_has_message.png"
+    },
+    {
+        "merged": "/Users/wangxing/Documents/androidProject/keplerSDK/build/intermediates/res/merged/release/drawable-xxhdpi-v4/seclect_item_logout.png",
+        "source": "/Users/wangxing/Documents/androidProject/keplerSDK/src/main/res/drawable-xxhdpi/seclect_item_logout.png"
+    },
+    {
+        "merged": "/Users/wangxing/Documents/androidProject/keplerSDK/build/intermediates/res/merged/release/drawable-xxhdpi-v4/kepler_selcet_more_normal.png",
+        "source": "/Users/wangxing/Documents/androidProject/keplerSDK/src/main/res/drawable-xxhdpi/kepler_selcet_more_normal.png"
+    },
+    {
+        "merged": "/Users/wangxing/Documents/androidProject/keplerSDK/build/intermediates/res/merged/release/drawable-xxhdpi-v4/kepler_back_normal.png",
+        "source": "/Users/wangxing/Documents/androidProject/keplerSDK/src/main/res/drawable-xxhdpi/kepler_back_normal.png"
+    },
+    {
+        "merged": "/Users/wangxing/Documents/androidProject/keplerSDK/build/intermediates/res/merged/release/drawable-xxhdpi-v4/seclect_item_serch.png",
+        "source": "/Users/wangxing/Documents/androidProject/keplerSDK/src/main/res/drawable-xxhdpi/seclect_item_serch.png"
+    },
+    {
+        "merged": "/Users/wangxing/Documents/androidProject/keplerSDK/build/intermediates/res/merged/release/drawable-xxhdpi-v4/seclect_item_has_message.png",
+        "source": "/Users/wangxing/Documents/androidProject/keplerSDK/src/main/res/drawable-xxhdpi/seclect_item_has_message.png"
+    },
+    {
+        "merged": "/Users/wangxing/Documents/androidProject/keplerSDK/build/intermediates/res/merged/release/drawable-xxhdpi-v4/seclect_item_orderlist.png",
+        "source": "/Users/wangxing/Documents/androidProject/keplerSDK/src/main/res/drawable-xxhdpi/seclect_item_orderlist.png"
+    }
+]

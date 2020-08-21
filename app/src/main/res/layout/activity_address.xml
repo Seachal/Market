@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/title_bar"/>
+
+    <Button
+        android:layout_gravity="bottom"
+        android:id="@+id/add_area"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y145"
+        android:text="新增地址"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:background="@drawable/btn_address_add"
+        />
+
+    <ListView
+        android:id="@+id/address_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/y145"
+        android:layout_marginTop="@dimen/title_bar_height"
+        android:background="@color/lineGray"
+        android:divider="@color/lineGray"
+        android:dividerHeight="@dimen/y27" />
+
+</FrameLayout>

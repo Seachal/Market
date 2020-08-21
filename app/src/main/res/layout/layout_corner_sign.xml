@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/corner_sign_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/y35"
+        android:src="@drawable/pending_fight_order"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/corner_sign_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/corner_sign_img"
+        android:layout_marginLeft="-8dp"
+        android:background="@drawable/icon_corner_sign"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/theme_orange_color"
+        android:textSize="12sp"/>
+
+</RelativeLayout>

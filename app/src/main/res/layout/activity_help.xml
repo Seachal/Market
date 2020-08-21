@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/titleBar"
+        layout="@layout/title_bar" />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我的代金券说明"
+            android:textColor="#fffc3d42"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_width="261dp"
+            android:layout_height="107dp"
+            android:text="我的代金券：是指充值、转卖场收支、产品销售额收益、广告收益、红包分成、销售代金券收益、转卖场交易费收益每天日终的金额之和，其中包含订单退款待到账等冻结金额"
+            android:textColor="#ff333333"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="冻结余额说明"
+            android:textColor="#fffc3d42"
+            android:textSize="15sp"
+            />
+
+        <TextView
+            android:layout_width="261dp"
+            android:layout_height="61dp"
+            android:text="冻结余额：是指评选商品时需要冻结您的代金券待评选结束后解冻转入代金券余额"
+            android:textColor="#ff333333"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

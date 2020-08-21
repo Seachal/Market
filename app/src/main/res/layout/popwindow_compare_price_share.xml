@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40sp"
+        android:background="@color/white"
+        >
+        <ImageView
+            android:id="@+id/popwindow_close"
+            android:layout_width="@dimen/x36"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/y30"
+            android:layout_marginRight="@dimen/x30"
+            android:src="@drawable/popwindow_close"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:background="@color/lineGray"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y440"
+        android:orientation="horizontal"
+        >
+        <com.dajukeji.hslz.view.RoundImageView
+            android:id="@+id/share_goods_image"
+            android:layout_width="@dimen/x440"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/y50"
+            android:paddingTop="@dimen/y50"
+            android:paddingLeft="@dimen/x100"
+            android:background="@color/white"
+            android:src="@drawable/goods"
+            android:scaleType="fitXY"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:paddingLeft="@dimen/y70"
+            android:paddingRight="@dimen/y80"
+            android:paddingTop="@dimen/y50"
+            android:paddingBottom="@dimen/y50"
+            android:orientation="vertical">
+
+            <TextView
+                android:paddingTop="@dimen/y10"
+                android:id="@+id/tv_share_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="我免费领取了行行行行行行快来免费领取产品吧"
+                android:textColor="#343434"
+                android:textSize="11sp" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="match_parent"
+                android:layout_height="0sp"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                android:text="快加入数字绿州吧！"
+                android:textColor="@color/redOrange"
+                android:textSize="10sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_share_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥0"
+                    android:textColor="@color/redOrange"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_market_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/x20"
+                    android:text="市场价￥0"
+                    android:textColor="#343434"
+                    android:textSize="10sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5sp"
+        android:background="@color/lineGray"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/wx_zone"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/y50"
+            android:paddingBottom="@dimen/y50"
+            android:background="@color/white"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="@dimen/x200"
+                android:layout_height="@dimen/y200"
+                android:src="@drawable/share_friend" />
+
+            <TextView
+                style="@style/popText"
+                android:layout_marginTop="@dimen/y30"
+                android:text="朋友圈" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <base href="<%=basePath%>">
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./dist/css/swiper.min.css">
+    <link rel="stylesheet" href="./css/goodsDetail.css">
+    <!-- Demo styles -->
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #F7F8F2;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 55%;
+    }
+	.main_image{
+		position: relative;
+		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+    </style>
+</head>
+<body>
+<!-- Swiper -->
+<div class="swiper-container" id="swiper-container-id">
+    <div class="swiper-wrapper">
+       <!--<div class="swiper-slide">
+            <img alt="" class="main_image" src="http://img.alicdn.com/tfscom/i3/1843045563/TB2U920diFTMKJjSZFAXXckJpXa_!!1843045563.jpg">
+        </div>
+        <div class="swiper-slide">
+            <img alt="" class="main_image" src="http://img.alicdn.com/tfscom/i3/1843045563/TB2U920diFTMKJjSZFAXXckJpXa_!!1843045563.jpg">
+        </div>
+        <div class="swiper-slide">
+            <img alt="" class="main_image" src="http://img.alicdn.com/tfscom/i3/1843045563/TB2U920diFTMKJjSZFAXXckJpXa_!!1843045563.jpg">
+        </div>
+        <div class="swiper-slide">
+            <img alt="" class="main_image" src="http://img.alicdn.com/tfscom/i3/1843045563/TB2U920diFTMKJjSZFAXXckJpXa_!!1843045563.jpg">
+        </div>-->
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+</div>
+<div class="head">
+    <div class="title">
+        <font id="shop_title">佰思露</font>&nbsp;&nbsp;<font id="title">小猪酸奶保湿面膜20片</font>
+    </div>
+    <div class="price">
+        <div class="price1">折扣价</div>
+        <div class="price2">￥<font id="zk_final_price">14.90</font></div>
+        <div class="price4">月销量<font  id="volume">1036</font></div>
+        <div class="price5"><font id="coupon_info">满50元减3元</font></div>
+    </div>
+</div>
+<input  type="hidden"  id="coupon_click_url" value="https://uland.taobao.com/coupon/edetail?e=nQ9scxMz1D48Clx5mXPEKmre%2BmwFs66e1IeEwdOjSXbS3Xb1IOY1eXgEluIW2gIXPpTdjzn1JSJZtG8UAamAkvj2c0DCe8k2%2BMUwzxYlSKF1F0rIqmZ2bhuekgIe8hJuRe%2F%2FQEnsqkuRCPx3tVDRr%2FvQFWeqWAJiwK9zVMgyQJznbYfZPG6qkvSs4zOlZ4se&traceId=0ab2017615049655670555851e">
+<div class="taoBuy" onclick="shareClick();">
+    <div class="topAndCopy">
+        <div class="taoLeft">
+			<div class="taoPrice"><font id="cutPrice">8</font><font>元优惠券</font></div>
+			<div class="taoTime"><font>使用期限:</font><font style="margin-left:5px;" id="taoStartTime" >2018.10.2</font><font id="taoEndTime" >2018.10.9</font></div>
+	   </div>
+	   <div class="taoRight">
+	   <p>立即购买</p>
+	   </div>
+    </div>
+</div>
+<div class="recommend">
+    <div class="recommendTitle">推荐语</div>
+    <div id="recommendContent" class="recommendContent">“每片面膜原液为30ML，原液质地粘稠的感觉，带给你更多呵护！天丝 珠光膜，敷出水润肌肤！”</div>
+    <div style="clear: both;"></div>
+</div>
+<!--<div class="store">
+    <div id="shop_name">佰思露旗舰店</div>
+    <div class="website">天猫TMALL.COM</div>
+    <div class="score">
+        <div class="title">店铺评分</div>
+        <div class="score1">发货5.0</div>
+        <div class="score1">服务4.8</div>
+        <div class="score1">描述5.0</div>
+        <div style="clear: both;"></div>
+    </div>
+</div> -->
+<!--<div class="detail">
+    查看图文详情
+</div>
+<div class="detailContent">
+    <img alt="" id="imageDetail" src="http://oss.lanlanlife.com/7e178a1ce88c05b120458bfa2ea47887%210_873x790.jpg">
+</div>-->
+
+<!-- Swiper JS -->
+<script src="./dist/js/swiper.min.js"></script>
+<script src="./js/jquery-1.5.1.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper('#swiper-container-id', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: 2500,
+        autoplayDisableOnInteraction: false,
+        observer:true,//修改swiper自己或子元素时，自动初始化swiper
+        observeParents:true,//修改swiper的父元素时，自动初始化swiper
+		lazyLoading: true,
+		lazyLoadingInPrevNext : true,
+		lazyLoadingInPrevNextAmount: 4, // 设置在延迟加载图片时提前多少个slide
+    });
+    </script>
+<script type="text/javascript">
+    	$(".detail").click(function(){
+    	  $(this).hide();
+    	  $(".detailContent").show();
+    	  });
+    </script>
+
+<script>
+
+        function shareClick() {
+			window.location.href=$("#coupon_click_url").val();
+       }
+
+
+        function connectWebViewJavascriptBridge(callback) {
+            if (window.WebViewJavascriptBridge) {
+                callback(WebViewJavascriptBridge)
+            } else {
+                document.addEventListener(
+                    'WebViewJavascriptBridgeReady'
+                    , function() {
+                        callback(WebViewJavascriptBridge)
+                    },
+                    false
+                );
+            }
+        }
+
+        connectWebViewJavascriptBridge(function(bridge) {
+            bridge.init(function(message, responseCallback) {
+                console.log('JS got a message', message);
+                var data = {
+                    'Javascript Responds': '测试中文!'
+                };
+                console.log('JS responding with', data);
+                responseCallback(data);
+            });
+			var isLoad = false;
+            bridge.registerHandler("functionInJs", function(data, responseCallback) {
+                var obj = eval ("(" + data + ")");
+                //alert(obj.category);
+                //标题
+                $("#title").html(obj.title);
+                //店铺名称
+                $("#shop_title").html(obj.shop_title);
+                $("#shop_name").html(obj.shop_title); // 店铺名称
+                $("#recommendContent").html(obj.item_description); // 推荐语volume
+                $("#volume").html(obj.volume); // 销量
+                $("#coupon_info").html(obj.coupon_info); // 产品优惠
+                $("#zk_final_price").html(obj.zk_final_price); // 产品优惠
+                $("#coupon_click_url").attr("value",obj.coupon_click_url); // 立即购买
+				$("#cutPrice").html(obj.cutPrice); // 满减价
+				$("#taoStartTime").html(obj.coupon_start_time); // 优惠券开始时间
+				$("#taoEndTime").html("---"+obj.coupon_end_time); // 优惠券结束时间
+				$("#imageDetail").attr("src",obj.imageDetail); // 图文详情
+                var images=obj.small_images.string;
+				if(!isLoad){
+					for(i=0;i<images.length;i++){
+						//alert(images[i]);
+						$(".swiper-wrapper").append("<div class='swiper-slide'><img alt='' class='main_image' src='"+images[i]+"'></div>");
+					}
+					isLoad =true;
+				}
+                $(".swiper-wrapper").append()
+                var responseData = "";
+               responseCallback(responseData);
+            });
+        })
+    </script>
+</body>
+</html>
+

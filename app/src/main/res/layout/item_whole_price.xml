@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y463"
+    android:background="#fff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y382"
+        android:layout_marginBottom="@dimen/y30"
+        android:layout_marginTop="@dimen/y50"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="@dimen/x30"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/pict_url"
+            android:layout_width="@dimen/x400"
+            android:layout_height="@dimen/y400"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/goods" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="5">
+
+            <TextView
+                android:id="@+id/item_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="数字绿州产品"
+                android:textColor="@color/fontBlack"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:textSize="15dp" />
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+            <LinearLayout
+                android:id="@+id/discount_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/final_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="￥135.00"
+                    android:textColor="@color/redOrange"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="@dimen/x240"
+                    android:layout_height="@dimen/y70"
+                    android:background="@drawable/shape_goods_discount1"
+                    android:gravity="center"
+                    android:text="分享抢"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/y20"
+                >
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="1sp"
+                    android:paddingLeft="3sp"
+                    android:paddingRight="3sp"
+                    android:paddingTop="1sp"
+                    android:text="￥258.00"
+                    android:textColor="#cecece"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+                <LinearLayout
+                    android:layout_width="@dimen/x240"
+                    android:layout_height="15dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/bar_color"
+                    android:padding="@dimen/x2"
+                    >
+                    <com.dajukeji.hslz.view.MyProgressBar
+                        android:id="@+id/rest_pro"
+                        android:layout_width="@dimen/x236"
+                        android:layout_height="13sp"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:max="100"
+                        android:progressDrawable="@drawable/progress_bar_color"
+                        android:visibility="visible"
+                        />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5sp"
+            android:layout_weight="8"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5sp"
+            android:layout_weight="7"
+            android:background="@color/lineGray"/>
+    </LinearLayout>
+</LinearLayout>

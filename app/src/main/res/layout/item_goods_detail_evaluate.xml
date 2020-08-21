@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30"
+        android:layout_marginTop="@dimen/y20">
+        <com.dajukeji.hslz.view.CircleImageView
+            android:id="@+id/people_head_img"
+            android:layout_width="@dimen/x45"
+            android:layout_height="@dimen/y45"
+            android:src="@drawable/back"/>
+        <TextView
+            android:id="@+id/people_name_tt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x10"
+            android:text="A成熟呢个"
+            android:textSize="10sp"
+            android:textColor="#666666"
+            android:layout_toRightOf="@+id/people_head_img"/>
+        <TextView
+            android:id="@+id/people_time_tt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="10sp"
+            android:textColor="#666666"
+            android:text="2017.12.04"/>
+
+        <TextView
+            android:id="@+id/evaluate_tt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/people_head_img"
+            android:layout_marginTop="@dimen/y30"
+            android:lines="1"
+            android:text="这件衣服真是棒棒哒，不要问我为什么，谁买谁知道，店主真贴心"/>
+
+        <TextView
+            android:id="@+id/goods_detaim_evaluate_bottom"
+            android:layout_below="@+id/evaluate_tt"
+            android:layout_marginTop="@dimen/y20"
+            android:layout_marginBottom="@dimen/y20"
+            android:layout_width="wrap_content"
+            android:text="尺寸：s码 白色"
+            android:textSize="10sp"
+            android:textColor="#959595"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

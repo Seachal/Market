@@ -1,0 +1,1237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.dajukeji.hslz.util.MyAdGallery
+            android:id="@+id/index_page_gallery"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y500"
+            android:visibility="gone" />
+
+        <!--临时图片-->
+        <!--<android.support.constraint.ConstraintLayout-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content">-->
+
+        <ImageView
+            android:visibility="visible"
+            android:id="@+id/iv_home_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <!--app:layout_constraintDimensionRatio="H,750:452"-->
+        <!--</android.support.constraint.ConstraintLayout>-->
+
+        <!--商城公告-->
+        <LinearLayout
+            android:visibility="visible"
+            android:id="@+id/to_health_know"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="46dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="19dp"
+                    android:layout_marginTop="17dp"
+                    android:src="@drawable/shang" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center_vertical"
+                android:background="#FFEDEDED" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:background="#fff"
+                android:orientation="vertical"
+                android:paddingBottom="10sp">
+
+                <LinearLayout
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <RelativeLayout
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:background="@drawable/bg_cat_coupon">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="通知"
+                            android:textColor="#FC3D42"
+                            android:textSize="12dp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/article_describe1"
+                        style="@style/poster"
+                        android:text="暂无公告" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+
+                    <RelativeLayout
+                        android:layout_width="35dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10sp"
+                        android:background="@drawable/bg_cat_coupon">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="公告"
+                            android:textColor="#FC3D42"
+                            android:textSize="12dp" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/article_describe2"
+                        style="@style/poster"
+                        android:text="暂无公告" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#fafafa" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="162dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/pingxuan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.3"
+                android:src="@mipmap/ping" />
+
+            <ImageView
+                android:id="@+id/xinpin"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.3"
+                android:src="@mipmap/xin" />
+
+            <ImageView
+                android:id="@+id/baokuan"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3.3"
+                android:src="@mipmap/bao" />
+        </LinearLayout>
+
+        <ImageView
+            tools:visibility="visible"
+            android:visibility="gone"
+            android:id="@+id/v_exchangeArea"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/icon_exchange_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#FFEDEDED" />
+
+        <LinearLayout
+            android:id="@+id/ll_reXiaoBang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="69dp"
+                android:background="#ffffff">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="热销榜"
+                    android:textColor="@color/red_color"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:paddingBottom="23dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.3"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_rexiao1"
+                        android:layout_width="109dp"
+                        android:scaleType="centerCrop"
+                        android:layout_height="117dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/xiang" />
+
+                    <TextView
+                        android:id="@+id/tv_rexiao1"
+                        android:layout_width="100dp"
+                        android:maxLines="3"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:text="祖玛珑香水蓝..."
+                        android:textColor="#FF333333"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#FC3D42"
+                            android:text="券"
+                            android:textSize="12dp"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_money_rexiao1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="630"
+                            android:textColor="#FC3D42"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.3"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_rexiao2"
+                        android:scaleType="centerCrop"
+                        android:layout_width="109dp"
+                        android:layout_height="117dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/nai" />
+
+                    <TextView
+                        android:id="@+id/tv_rexiao2"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:maxLines="3"
+                        android:text="Nutrilon诺优能荷..."
+                        android:textColor="#FF333333"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="券"
+                            android:textColor="#FC3D42"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/tv_money_rexiao2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="320"
+                            android:textColor="#FC3D42"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.3"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_rexiao3"
+                        android:layout_width="109dp"
+                        android:scaleType="centerCrop"
+                        android:layout_height="117dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/kou" />
+
+                    <TextView
+                        android:id="@+id/tv_rexiao3"
+                        android:layout_width="100dp"
+                        android:maxLines="3"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:text="YSL圣罗兰纯..."
+                        android:textColor="#FF333333"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="券"
+                            android:textColor="#FC3D42"
+                            android:textSize="12dp" />
+
+                        <TextView
+                            android:id="@+id/tv_money_rexiao3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="285"
+                            android:textColor="#FC3D42"
+                            android:textSize="12dp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#FFEDEDED" />
+        </LinearLayout>
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/banner_one"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            app:placeholderImage="@drawable/goods" />
+
+        <View
+            android:visibility="gone"
+            android:id="@+id/banner_one_underline"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#FFEDEDED" />
+
+        <!--活动专区-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/group_advertising"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="4dp">
+
+                    <ImageView
+                        android:layout_width="230dp"
+                        android:layout_height="27dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/huo" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="活动专区"
+                        android:textColor="@color/red_color"
+                        android:textSize="20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#FFEDEDED" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="232dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="153dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/banner_six"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#FFEDEDED" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="5"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:id="@+id/banner_seven"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#FFEDEDED" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="5">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5">
+
+                                <ImageView
+                                    android:id="@+id/banner_eight"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="#FFEDEDED" />
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="5">
+
+                                <ImageView
+                                    android:id="@+id/banner_nine"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#FFEDEDED" />
+            </LinearLayout>
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/banner_two"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                app:placeholderImage="@drawable/goods"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/banner_two_underline"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="10dp"
+                android:background="#FFEDEDED" />
+
+        </LinearLayout>
+
+        <!--猜你喜欢-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="4dp">
+
+            <ImageView
+                android:layout_width="230dp"
+                android:layout_height="27dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/huo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="猜你喜欢"
+                android:textColor="@color/red_color"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <!--临时图片-->
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:src="@drawable/bigimg_home_jingxvan"
+                app:layout_constraintDimensionRatio="H,75:32"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--第一层-->
+            <ImageView
+                android:id="@+id/banner_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/baonao" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:paddingBottom="23dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.3"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_h1_1"
+                        android:layout_width="109dp"
+                        android:layout_height="117dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/gucci" />
+
+                    <TextView
+                        android:id="@+id/tv_h1_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:maxWidth="100dp"
+                        android:maxLines="3"
+                        android:text="gucci"
+                        android:textColor="#FF333333"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_h1_1m"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="券 10280.00"
+                            android:textColor="#FC3D42"
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.3"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_h1_2"
+                        android:layout_width="109dp"
+                        android:layout_height="117dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/gucci" />
+
+                    <TextView
+                        android:id="@+id/tv_h1_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:maxWidth="100dp"
+                        android:maxLines="3"
+                        android:text="burberry"
+                        android:textColor="#FF333333"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_h1_2m"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="券 4220.00"
+                            android:textColor="#FC3D42"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.3"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_h1_3"
+                        android:layout_width="109dp"
+                        android:layout_height="117dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/gucci" />
+
+                    <TextView
+                        android:id="@+id/tv_h1_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:maxWidth="100dp"
+                        android:maxLines="3"
+                        android:text="Chabel"
+                        android:textColor="#FF333333"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_h1_3m"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="券 24550.00"
+                            android:textColor="#FC3D42"
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#FFEDEDED" />
+
+            <!--第二层-->
+            <ImageView
+                android:id="@+id/banner_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/maoyi" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:paddingBottom="23dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.3"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_h2_1"
+                        android:layout_width="109dp"
+                        android:layout_height="117dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/milk" />
+
+                    <TextView
+                        android:id="@+id/tv_h2_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:maxWidth="100dp"
+                        android:maxLines="3"
+                        android:text="milkcocoa"
+                        android:textColor="#FF333333"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_h2_1m"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="券 488.00"
+                            android:textColor="#FC3D42"
+
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.3"
+                    android:orientation="vertical"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_h2_2"
+                        android:layout_width="109dp"
+                        android:layout_height="117dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/owen" />
+
+                    <TextView
+                        android:id="@+id/tv_h2_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:maxWidth="100dp"
+                        android:maxLines="3"
+                        android:text="mila owen"
+                        android:textColor="#FF333333"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_h2_2m"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="券 980.00"
+                            android:textColor="#FC3D42"
+
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.3"
+                    android:orientation="vertical"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_h2_3"
+                        android:layout_width="109dp"
+                        android:layout_height="117dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/gucci" />
+
+                    <TextView
+                        android:id="@+id/tv_h2_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:maxWidth="100dp"
+                        android:maxLines="3"
+                        android:text="other stoies"
+                        android:textColor="#FF333333"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_h2_3m"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="券 520.00"
+                            android:textColor="#FC3D42"
+
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#FFEDEDED" />
+
+            <!--第三层-->
+            <ImageView
+                android:id="@+id/banner_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/asd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:paddingBottom="23dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.3"
+                    android:orientation="vertical"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_h3_1"
+                        android:layout_width="109dp"
+                        android:layout_height="117dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/lamer" />
+
+                    <TextView
+                        android:id="@+id/tv_h3_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:maxWidth="100dp"
+                        android:maxLines="3"
+                        android:text="La Mer"
+                        android:textColor="#FF333333"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_h3_1m"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="券 1289.00"
+                            android:textColor="#FC3D42"
+
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.3"
+                    android:orientation="vertical"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_h3_2"
+                        android:layout_width="109dp"
+                        android:layout_height="117dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/lamertwo" />
+
+                    <TextView
+                        android:id="@+id/tv_h3_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:maxWidth="100dp"
+                        android:maxLines="3"
+                        android:text="La Mer"
+                        android:textColor="#FF333333"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_h3_2m"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="券 639.00"
+                            android:textColor="#FC3D42"
+
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.3"
+                    android:orientation="vertical"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_h3_3"
+                        android:layout_width="109dp"
+                        android:layout_height="117dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/gucci" />
+
+                    <TextView
+                        android:id="@+id/tv_h3_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:maxWidth="100dp"
+                        android:maxLines="3"
+                        android:text="WHOO"
+                        android:textColor="#FF333333"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_h3_3m"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="券 499.00"
+                            android:textColor="#FC3D42"
+
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#FFEDEDED" />
+
+            <!--第四层-->
+            <ImageView
+                android:id="@+id/banner_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/asd" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:paddingBottom="23dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.3"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_h4_1"
+                        android:layout_width="109dp"
+                        android:layout_height="117dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/lamer" />
+
+                    <TextView
+                        android:id="@+id/tv_h4_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:maxWidth="100dp"
+                        android:maxLines="3"
+                        android:text="La Mer"
+                        android:textColor="#FF333333"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_h4_1m"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="券 1289.00"
+                            android:textColor="#FC3D42"
+
+                            android:textSize="12dp" />
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.3"
+                    android:orientation="vertical"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_h4_2"
+                        android:layout_width="109dp"
+                        android:layout_height="117dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/lamertwo" />
+
+                    <TextView
+                        android:id="@+id/tv_h4_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:maxWidth="100dp"
+                        android:maxLines="3"
+                        android:text="La Mer"
+                        android:textColor="#FF333333"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_h4_2m"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="券 639.00"
+                            android:textColor="#FC3D42"
+
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3.3"
+                    android:orientation="vertical"
+
+                    >
+
+                    <ImageView
+                        android:id="@+id/iv_h4_3"
+                        android:layout_width="109dp"
+                        android:layout_height="117dp"
+                        android:layout_gravity="center_horizontal"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/gucci" />
+
+                    <TextView
+                        android:id="@+id/tv_h4_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="6dp"
+                        android:maxWidth="100dp"
+                        android:maxLines="3"
+                        android:text="WHOO"
+                        android:textColor="#FF333333"
+                        android:textSize="12dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_h4_3m"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="券 499.00"
+                            android:textColor="#FC3D42"
+
+                            android:textSize="12dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#FFEDEDED" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="4dp">
+
+            <ImageView
+                android:layout_width="230dp"
+                android:layout_height="27dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/huo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="热销好货"
+                android:textColor="@color/red_color"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

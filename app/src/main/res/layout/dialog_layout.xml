@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:alpha="13"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/img_cancle"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:layout_marginLeft="11dp"
+            android:layout_marginTop="9dp"
+            android:src="@drawable/cancel_order" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y30"
+            android:text="输入支付密码"
+            android:textColor="@color/black" />
+
+        <com.dajukeji.hslz.util.PayPwdEditText
+            android:id="@+id/dialog_ppet"
+            android:layout_width="300dp"
+            android:layout_height="51dp"
+            android:layout_below="@+id/tv_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/y30"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/tv_forgetPwd"
+            android:text="忘记密码"
+            android:layout_marginBottom="10dp"
+            android:layout_alignEnd="@id/dialog_ppet"
+            android:layout_below="@id/dialog_ppet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</LinearLayout>
+

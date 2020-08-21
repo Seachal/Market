@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="@dimen/x905"
+        android:layout_height="@dimen/y905"
+        android:layout_centerInParent="true">
+
+        <LinearLayout
+            android:layout_width="@dimen/x840"
+            android:layout_height="@dimen/y840"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_complaint_appraise">
+
+            <ImageView
+                android:layout_width="@dimen/x450"
+                android:layout_height="@dimen/y450"
+                android:scaleType="fitXY"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/y60"
+                android:src="@drawable/icon_like"/>
+
+            <com.dajukeji.hslz.view.SelectedButton
+                android:id="@+id/btn_to_appraise"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y88"
+                android:layout_marginLeft="@dimen/x125"
+                android:layout_marginRight="@dimen/x125"
+                android:layout_marginTop="@dimen/y40"
+                android:background="@drawable/bg_to_appraise"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="@string/text_to_appraise"
+                android:textColor="@color/white"
+                android:textSize="14sp"/>
+
+            <com.dajukeji.hslz.view.SelectedButton
+                android:id="@+id/btn_to_complaint"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y88"
+                android:layout_marginLeft="@dimen/x125"
+                android:layout_marginRight="@dimen/x125"
+                android:layout_marginTop="@dimen/y30"
+                android:background="@drawable/bg_to_complaint"
+                style="?android:attr/borderlessButtonStyle"
+                android:text="@string/text_to_complaint"
+                android:textColor="@color/line_gray_color"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_to_close"
+            android:layout_width="@dimen/x70"
+            android:layout_height="@dimen/y70"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/icon_shutdown" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

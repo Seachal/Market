@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+    <include layout="@layout/title_bar"/>
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/y20"
+        android:paddingBottom="@dimen/y20"
+        android:paddingLeft="@dimen/x30"
+        android:background="@color/backgroundGray"
+        android:gravity="center_vertical"
+        >
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:background="@drawable/shape_find_shop"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:gravity="center_vertical"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:src="@drawable/find_coupon2"
+                    />
+                <EditText
+                    android:id="@+id/shop_find_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="5dp"
+                    android:hint="@string/find_shop_input"
+                    />
+                <ImageView
+                    android:id="@+id/clearImage"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginRight="5dp"
+                    android:visibility="gone"
+                    android:src="@drawable/clear"
+                    />
+            </LinearLayout>
+        <TextView
+            android:id="@+id/shop_to_find"
+            android:layout_width="@dimen/x150"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x30"
+            android:layout_marginRight="@dimen/x30"
+            android:text="@string/find_shop_detail"
+            android:background="@drawable/selector_shop_text_tv"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/fist_view"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#dadada" />
+        <LinearLayout
+            android:id="@+id/history_image"
+            android:layout_below="@+id/fist_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/history"
+                android:layout_marginLeft="15dp"
+                android:scaleType="fitXY"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/find_hot_detail_history"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp" />
+            <Space
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:id="@+id/clear_all"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/delete"/>
+        </LinearLayout>
+        <com.dajukeji.hslz.view.FlowLayout
+            android:layout_marginTop="5dp"
+            android:padding="20dp"
+            android:layout_below="@+id/history_image"
+            android:id="@+id/id_flowlayout_history"
+            android:layout_width="fill_parent"
+            android:background="#fff"
+            android:layout_height="wrap_content" >
+        </com.dajukeji.hslz.view.FlowLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="#fff"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/second_view"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_height="1dp"
+            android:background="#dadada" />
+        <LinearLayout
+            android:id="@+id/hot_image"
+            android:layout_below="@+id/second_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:src="@drawable/hot"
+                android:layout_marginLeft="15dp"
+                android:scaleType="fitXY"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/find_hot_detail"
+                android:layout_marginLeft="10dp"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <!--<ImageView
+            android:id="@+id/hot_image"
+            android:layout_width="15dp"
+            android:layout_height="17dp"
+            android:src="@drawable/hot"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitXY"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/find_hot_detail"
+            android:layout_toRightOf="@+id/hot_image"
+            android:layout_alignBottom="@+id/hot_image"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:layout_alignTop="@+id/hot_image" />-->
+        <com.dajukeji.hslz.view.FlowLayout
+            android:layout_marginTop="5dp"
+            android:padding="20dp"
+            android:layout_below="@+id/hot_image"
+            android:id="@+id/id_flowlayout"
+            android:layout_width="fill_parent"
+            android:background="#fff"
+            android:layout_height="wrap_content" >
+        </com.dajukeji.hslz.view.FlowLayout>
+    </RelativeLayout>
+
+</LinearLayout>

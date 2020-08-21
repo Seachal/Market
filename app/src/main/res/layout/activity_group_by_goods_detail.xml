@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+    <include layout="@layout/include_goods_detail_top" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+            android:id="@+id/goods_detail_pull_refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--宝贝-->
+                <include layout="@layout/goods_detail_group_by_people"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/x20"
+                    android:background="@color/gray_line" />
+
+                <!--详情-->
+                <WebView
+                    android:id="@+id/goods_detail_webview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y20"
+                    android:background="@color/gray_line"/>
+
+                <!--评价-->
+                <include layout="@layout/include_goods_detail_evaluate"/>
+
+                <!--推荐-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/y120"
+                    android:gravity="center">
+                    <ImageView
+                        android:layout_width="@dimen/x40"
+                        android:layout_height="@dimen/y40"
+                        android:id="@+id/recommend_iv"
+                        android:src="@drawable/recommend"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/recommend_iv"
+                        android:text="为您推荐"
+                        android:textColor="#ff4f00"/>
+                </RelativeLayout>
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/goods_detail_recommend_recycle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+        </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+    </LinearLayout>
+
+    <include layout="@layout/include_goods_detail_bottom" />
+</LinearLayout>

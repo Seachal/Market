@@ -1,0 +1,86 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/wangxing/Documents/androidProject/keplerSDK/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml",
+            "map": [
+                {
+                    "source": "/Users/wangxing/Documents/androidProject/keplerSDK/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "7,17,65,48,41,60,55,36,21,31,26",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "194,529,2222,1577,1317,2030,1837,1160,694,1006,850",
+                        "endLines": "14,19,70,53,46,63,58,39,24,34,29",
+                        "endColumns": "12,12,12,12,12,12,12,12,12,12,12",
+                        "endOffsets": "488,686,2553,1829,1569,2214,2022,1309,842,1152,998"
+                    },
+                    "to": {
+                        "startLines": "16,24,27,33,39,45,49,53,57,61,65",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "739,1031,1191,1522,1774,2026,2212,2399,2550,2700,2848",
+                        "endLines": "23,26,32,38,44,48,52,56,60,64,68",
+                        "endColumns": "12,12,12,12,12,12,12,12,12,12,12",
+                        "endOffsets": "1026,1186,1517,1769,2021,2207,2394,2545,2695,2843,2993"
+                    }
+                },
+                {
+                    "source": "/Users/wangxing/Documents/androidProject/keplerSDK/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "4,3,14,13,11,12,7,5,10,15,9,16,6,8",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "143,102,646,600,473,549,313,219,431,694,392,744,274,354",
+                        "endColumns": "75,40,47,45,75,50,40,54,41,49,38,41,38,37",
+                        "endOffsets": "214,138,689,641,544,595,349,269,468,739,426,781,308,387"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,131,172,220,266,342,393,434,489,531,581,620,662,701",
+                        "endColumns": "75,40,47,45,75,50,40,54,41,49,38,41,38,37",
+                        "endOffsets": "126,167,215,261,337,388,429,484,526,576,615,657,696,734"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "/Users/wangxing/Documents/androidProject/keplerSDK/build/intermediates/res/merged/release/values/values.xml",
+            "map": [
+                {
+                    "source": "/Users/wangxing/Documents/androidProject/keplerSDK/src/main/res/values/styles.xml",
+                    "from": {
+                        "startLines": "7,17,65,48,41,60,55,36,21,31,26",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "194,529,2222,1577,1317,2030,1837,1160,694,1006,850",
+                        "endLines": "14,19,70,53,46,63,58,39,24,34,29",
+                        "endColumns": "12,12,12,12,12,12,12,12,12,12,12",
+                        "endOffsets": "488,686,2553,1829,1569,2214,2022,1309,842,1152,998"
+                    },
+                    "to": {
+                        "startLines": "16,24,27,33,39,45,49,53,57,61,65",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "739,1031,1191,1522,1774,2026,2212,2399,2550,2700,2848",
+                        "endLines": "23,26,32,38,44,48,52,56,60,64,68",
+                        "endColumns": "12,12,12,12,12,12,12,12,12,12,12",
+                        "endOffsets": "1026,1186,1517,1769,2021,2207,2394,2545,2695,2843,2993"
+                    }
+                },
+                {
+                    "source": "/Users/wangxing/Documents/androidProject/keplerSDK/src/main/res/values/strings.xml",
+                    "from": {
+                        "startLines": "4,3,14,13,11,12,7,5,10,15,9,16,6,8",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "143,102,646,600,473,549,313,219,431,694,392,744,274,354",
+                        "endColumns": "75,40,47,45,75,50,40,54,41,49,38,41,38,37",
+                        "endOffsets": "214,138,689,641,544,595,349,269,468,739,426,781,308,387"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,131,172,220,266,342,393,434,489,531,581,620,662,701",
+                        "endColumns": "75,40,47,45,75,50,40,54,41,49,38,41,38,37",
+                        "endOffsets": "126,167,215,261,337,388,429,484,526,576,615,657,696,734"
+                    }
+                }
+            ]
+        }
+    ]
+}

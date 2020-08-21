@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.dajukeji.hs.com.qianlihu.hxsz.activity.mine.usersetting.FeedBackActivity">
+
+    <include layout="@layout/title_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:overScrollMode="never" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#EEEEEE"
+            android:paddingLeft="@dimen/x30"
+            android:paddingRight="@dimen/x30"
+            android:paddingTop="@dimen/y20">
+
+            <EditText
+                android:id="@+id/feed_back_content"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y360"
+                android:padding="@dimen/x30"
+                android:background="@drawable/bg_complaint_appraise"
+                android:hint="@string/text_feedback_tips"
+                android:textColorHint="#999999"
+                android:textSize="13sp"
+                android:gravity="top"/>
+
+            <EditText
+                android:id="@+id/feed_back_phone"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y80"
+                android:background="@drawable/bg_complaint_appraise"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/x30"
+                android:layout_marginTop="@dimen/y20"
+                android:hint="您的手机号(必填)"
+                android:maxLength="11"
+                android:inputType="phone"
+                android:textColorHint="#999999"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y70"
+                android:layout_marginBottom="@dimen/y50"
+                android:text="问题截图(选填，最多3张)"
+                android:textSize="13sp"
+                android:textColor="#999999"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/feed_back_add_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+            </android.support.v7.widget.RecyclerView>
+
+            <com.dajukeji.hslz.view.SelectedButton
+                android:id="@+id/feed_back_submit"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y100"
+                android:layout_marginLeft="@dimen/x50"
+                android:layout_marginRight="@dimen/x50"
+                android:layout_marginTop="@dimen/y200"
+                android:text="@string/text_submit"
+                android:textSize="15sp"
+                android:textColor="#666666"
+                android:background="@drawable/btn_phone_login"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

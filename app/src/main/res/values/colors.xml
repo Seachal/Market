@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <!--线条灰-->
+    <color name="lineGray">#E3E3E3</color>
+    <!--背景灰-->
+    <color name="backgroundGray">#F1F1F1</color>
+    <color name="liGray">#333333</color>
+    <color name="colorEmpty">#00000000</color>
+    <!--背景白-->
+    <color name="backgroundWhite">#FFFFFF</color>
+    <color name="littleBlue">#148eec</color>
+    <color name="red">#FF204C</color>
+    <color name="button_red">#FF4B68</color>
+    <color name="littleRed">#e99199</color>
+    <!--白-->
+    <color name="white">#FFFFFF</color>
+    <!--输入框灰-->
+    <color name="inputGray">#5e5a5a</color>
+    <color name="near_gray">#666666</color>
+    <color name="far_gray">#A7A7A7</color>
+    <!--字灰-->
+    <color name="fontGray">#ADADAD</color>
+    <!--字红-->
+    <color name="fontRed">#d62525</color>
+    <!--透明-->
+    <color name="transparent">#0fff</color>
+    <!--字黑-->
+    <color name="fontBlack">#000000</color>
+    <!--白-->
+    <color name="indexButtonWhite">#F9F9F9</color>
+    <!--橙-->
+    <color name="orange">#f74504</color>
+    <!--橙红-->
+    <color name="redOrange">#ff4f00</color>
+    <!--白灰-->
+    <color name="grayWhite">#F1F7F9</color>
+    <color name="divider">#ffd2d2d2</color>
+
+    <color name="buy_now">#ff4f00</color>
+
+    <color name="lightgray">#F0F0F0</color>
+
+    <color name="app_bg">#eeeff3</color>
+    <color name="theme">@color/red</color>
+    <color name="theme_red">@color/red</color>
+    <color name="theme_white">@color/white</color>
+    <color name="gray_light">#EBEBEB</color>
+    <color name="gray_line">#dddddd</color>
+    <color name="hint_text">#B9BABB</color>
+    <color name="small_goods_price">#FF8C69</color>
+    <color name="title_black_color">#333333</color>
+    <color name="text_red">#ec0f38</color>
+    <color name="text_gray">#888888</color>
+    <color name="text_black">#222222</color>
+    <color name="price_red">#ff3346</color>
+    <color name="bg_gray">#f1f1f1</color>
+    <color name="gray_good_spec">#898989</color>
+    <color name="black">#000000</color>
+    <color name="blue">#0000FF</color>
+    <color name="gray">#7f7f7f</color>
+    <color name="decoration">#f7f7f7</color>
+    <color name="title_bar_title_color">#454545</color>
+    <color name="title_bar_bg_color">#EEEEEE</color>
+    <color name="theme_orange_color">#FF4F00</color>
+    <color name="line_gray_color">#D1D1D1</color>
+    <color name="status_green_color">#36af36</color>
+    <color name="exchange_option">#999999</color>
+    <color name="exchange_reason">#666666</color>
+    <color name="tabUnselected">#121212</color>
+    <color name="goods_name_color">#343434</color>
+    <color name="goods_info_tip">#555555</color>
+    <color name="goods_info_price">#545454</color>
+    <color name="goods_info_sales">#333333</color>
+    <color name="goods_info_cc">#cccccc</color>
+    <color name="red_color">#fc3a2f</color>
+    <!--popupwindow空白区域的透明-->
+    <color name="popupwindow_outside">#36000000</color>
+    <color name="tab_bg_color">#f9f9f9</color>
+    <color name="textblacknormal">#151515</color>
+    <color name="textgraynormal">#636363</color>
+    <color name="orderbuttonsub">#d6d6d6</color>
+    <color name="enter_store_button">#f4f4f4</color>
+    <color name="item_brandname_tt">#6c6c6c</color>
+    <color name="item_leter_tt_bg">#d5d5d5</color>
+    <color name="collection_tt_color">#575757</color>
+    <color name="dot_unselect">#fece87</color>
+    <color name="stroke_yellow">#ffe2af</color>
+    <color name="bg_red">#e71611</color>
+    <color name="order_info">#444444</color>
+    <color name="refund_gsp">#cecece</color>
+    <color name="subsidy_user_time">#909090</color>
+    <color name="order_logistics">#bfbfbf</color>
+    <color name="order_second">#ffa124</color>
+    <color name="orange_text">#fe6608</color>
+    <color name="subsidy_immediately">#ffa300</color>
+</resources>

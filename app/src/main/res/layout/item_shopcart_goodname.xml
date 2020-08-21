@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <include
+        android:id="@+id/store_name_layout"
+        layout="@layout/item_shopcart_storename" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y2"
+        android:layout_marginLeft="@dimen/x30"
+        android:layout_marginRight="@dimen/x30"
+        android:background="@color/title_bar_bg_color" />
+
+    <LinearLayout
+        android:id="@+id/item_good"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/y35"
+        android:paddingTop="@dimen/y30">
+
+        <RelativeLayout
+            android:id="@+id/check_good"
+            android:layout_width="@dimen/x90"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/is_good_lose"
+                android:layout_width="@dimen/x60"
+                android:layout_height="@dimen/y30"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+
+            <CheckBox
+                android:id="@+id/good_selection"
+                style="@style/customCheckBox"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:clickable="false"
+                android:gravity="center" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="@dimen/x260"
+            android:layout_height="@dimen/y260">
+
+
+            <ImageView
+                android:id="@+id/good_img"
+                android:layout_width="@dimen/x260"
+                android:layout_height="@dimen/y260"
+                android:layout_gravity="center_vertical"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/goods_invaled_iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/invaled_goods_bg"
+                android:visibility="visible"
+                android:scaleType="fitXY"
+                android:alpha="0.5"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/item_goodrl"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/y260"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/x40">
+
+            <TextView
+                android:id="@+id/good_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/x70"
+                android:textStyle="bold"
+                android:ellipsize="end"
+                android:textColor="@color/tabUnselected"
+                android:maxLines="2"
+                android:text="梅赛德斯奔驰s500耀世4matic版本hybrid混动型＆奥迪A8 45tfsi 机械增压4quatrue" />
+
+            <TextView
+                android:id="@+id/good_sku"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/good_name"
+                android:layout_marginTop="@dimen/y25"
+                android:text="一个装"
+                android:textColor="@color/gray_good_spec" />
+
+            <TextView
+                android:id="@+id/rmb_symbol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/good_name"
+                android:layout_alignParentBottom="true"
+                android:textStyle="bold"
+                android:text="@string/rmb_symbol"
+                android:textColor="@color/redOrange"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/good_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/x15"
+                android:layout_toRightOf="@+id/rmb_symbol"
+                android:textStyle="bold"
+                android:text="12.52"
+                android:textColor="@color/redOrange"
+                android:textSize="15sp" />
+
+            <com.dajukeji.hslz.view.AmountView
+                android:id="@+id/amount_view"
+                android:layout_width="@dimen/x270"
+                android:layout_height="@dimen/y80"
+                android:layout_alignBottom="@+id/good_price"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/x70"
+                app:btnTextSize="15sp"
+                app:btnWidth="@dimen/x80"
+                app:tvWidth="@dimen/x90" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

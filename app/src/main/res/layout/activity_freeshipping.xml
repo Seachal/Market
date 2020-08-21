@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.dajukeji.hslz.view.tablayout.SlidingTabLayout
+                android:id="@+id/tab_free_title"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y123"
+                android:background="@color/white"
+                app:tl_iconVisible="false"
+                app:tl_underline_color="#D1D1D1"
+                app:tl_underline_height="@dimen/y1"
+                app:tl_indicator_color="@color/theme_orange_color"
+                app:tl_indicator_height="@dimen/y5"
+                app:tl_indicator_width="@dimen/x30"
+                app:tl_textsize="14sp"
+                app:tl_textSelectColor="@color/theme_orange_color"
+                app:tl_textUnselectColor="@color/title_black_color" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/vp_free_pager"
+                android:layout_marginTop="@dimen/y20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+</LinearLayout>

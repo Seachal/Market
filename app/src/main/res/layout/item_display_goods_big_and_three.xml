@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_bigImg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bkq_hb1"
+        app:layout_constraintDimensionRatio="H,75:32"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--骨架-->
+    <View
+        android:id="@+id/v_goods1"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        app:layout_constraintEnd_toStartOf="@+id/v_goods2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_bigImg" />
+
+    <View
+        android:id="@+id/v_goods2"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        app:layout_constraintEnd_toStartOf="@+id/v_goods3"
+        app:layout_constraintStart_toEndOf="@+id/v_goods1"
+        app:layout_constraintTop_toBottomOf="@id/iv_bigImg" />
+
+    <View
+        android:id="@+id/v_goods3"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/v_goods2"
+        app:layout_constraintTop_toBottomOf="@id/iv_bigImg" />
+
+    <!--图-->
+    <ImageView
+        android:id="@+id/iv_goodsImg1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/t1"
+        app:layout_constraintEnd_toEndOf="@id/v_goods1"
+        app:layout_constraintStart_toStartOf="@id/v_goods1"
+        app:layout_constraintTop_toTopOf="@id/v_goods1" />
+
+    <ImageView
+        android:id="@+id/iv_goodsImg2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/t2"
+        app:layout_constraintEnd_toEndOf="@id/v_goods2"
+        app:layout_constraintStart_toStartOf="@id/v_goods2"
+        app:layout_constraintTop_toTopOf="@id/v_goods2" />
+
+    <ImageView
+        android:id="@+id/iv_goodsImg3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/t3"
+        app:layout_constraintEnd_toEndOf="@id/v_goods3"
+        app:layout_constraintStart_toStartOf="@id/v_goods3"
+        app:layout_constraintTop_toTopOf="@id/v_goods3" />
+
+    <!--售空-->
+    <ImageView
+        android:id="@+id/iv_soldOut1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintCircle="@id/iv_goodsImg1"
+        android:src="@drawable/yshou"/>
+
+    <ImageView
+        android:id="@+id/iv_soldOut2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintCircle="@id/iv_goodsImg2"
+        android:src="@drawable/yshou"/>
+
+    <ImageView
+        android:id="@+id/iv_soldOut3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintCircle="@id/iv_goodsImg3"
+        android:src="@drawable/yshou"/>
+
+    <!--名-->
+    <TextView
+        android:id="@+id/tv_goodsName1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:text="儿童滑滑梯室内家..."
+        android:textColor="#FF333333"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/v_goods1"
+        app:layout_constraintStart_toStartOf="@id/v_goods1"
+        app:layout_constraintTop_toBottomOf="@id/iv_goodsImg1" />
+
+    <TextView
+        android:id="@+id/tv_goodsName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:text="儿童滑滑梯室内家..."
+        android:textColor="#FF333333"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/v_goods2"
+        app:layout_constraintStart_toStartOf="@id/v_goods2"
+        app:layout_constraintTop_toBottomOf="@id/iv_goodsImg2" />
+
+    <TextView
+        android:id="@+id/tv_goodsName3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="6dp"
+        android:text="儿童滑滑梯室内家..."
+        android:textColor="#FF333333"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/v_goods3"
+        app:layout_constraintStart_toStartOf="@id/v_goods3"
+        app:layout_constraintTop_toBottomOf="@id/iv_goodsImg3" />
+
+    <!--价-->
+    <TextView
+        android:id="@+id/tv_goodsPrice1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="券￥85.00"
+        android:textColor="@color/red_color"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/v_goods1"
+        app:layout_constraintStart_toStartOf="@id/v_goods1"
+        app:layout_constraintTop_toBottomOf="@id/tv_goodsName1" />
+
+    <TextView
+        android:id="@+id/tv_goodsPrice2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="券￥85.00"
+        android:textColor="@color/red_color"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/v_goods2"
+        app:layout_constraintStart_toStartOf="@id/v_goods2"
+        app:layout_constraintTop_toBottomOf="@id/tv_goodsName2" />
+
+    <TextView
+        android:id="@+id/tv_goodsPrice3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="券￥85.00"
+        android:textColor="@color/red_color"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/v_goods3"
+        app:layout_constraintStart_toStartOf="@id/v_goods3"
+        app:layout_constraintTop_toBottomOf="@id/tv_goodsName3" />
+
+</android.support.constraint.ConstraintLayout>

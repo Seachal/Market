@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    tools:context="com.dajukeji.hs.com.qianlihu.hxsz.activity.mine.order.OrderActivity">
+
+    <include layout="@layout/title_bar"/>
+
+<!--    <SelfAdaptionTabLayout
+        android:id="@+id/order_sliding_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sliding_tabLayout_height"
+        app:tabSelectedTextColor="@color/theme_orange_color"
+        app:tabTextColor="@color/black"
+        app:tabIndicatorThickness="@dimen/y6"
+        app:tabIndicatorColor="@color/theme_orange_color"
+        app:bottomBorderThickness="1px"
+        app:bottomBorderColor="#D1D1D1"/>-->
+
+    <com.dajukeji.hslz.view.tablayout.SlidingTabLayout
+        android:id="@+id/order_sliding_tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/sliding_tabLayout_height"
+        android:background="@color/white"
+        app:tl_iconVisible="false"
+        app:tl_underline_color="#D1D1D1"
+        app:tl_underline_height="@dimen/y1"
+        app:tl_indicator_color="@color/theme_orange_color"
+        app:tl_indicator_height="@dimen/y5"
+        app:tl_indicator_width="@dimen/x30"
+        app:tl_tab_space_equal="true"
+        app:tl_textSelectColor="@color/theme_orange_color"
+        app:tl_textUnselectColor="@color/title_black_color" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/order_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

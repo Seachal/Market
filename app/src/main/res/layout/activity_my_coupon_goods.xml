@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/title_bar"/>
+
+
+    <com.dajukeji.hslz.view.tablayout.SlidingTabLayout
+        android:id="@+id/tab_coupon_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y158"
+        android:background="@color/white"
+        app:tl_iconVisible="false"
+        app:tl_underline_color="#D1D1D1"
+        app:tl_underline_height="@dimen/y1"
+        app:tl_indicator_color="@color/theme_orange_color"
+        app:tl_indicator_height="@dimen/y5"
+        app:tl_indicator_width="@dimen/x30"
+        app:tl_textSelectColor="@color/theme_orange_color"
+        app:tl_textUnselectColor="@color/title_black_color"
+        />
+
+    <com.dajukeji.hslz.view.NoScrollViewPager
+        android:id="@+id/vp_coupon_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+</LinearLayout>

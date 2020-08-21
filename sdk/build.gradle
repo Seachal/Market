@@ -1,0 +1,51 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+//    signingConfigs{
+//        release{
+//            storeFile file("$System.env.KEYSTORE_PATH")
+//            storePassword "$System.env.STOREPASS"
+//            keyAlias "$System.env.ALIAS"
+//            keyPassword "$System.env.KEYPASS"
+//        }
+//    }
+
+    packagingOptions{
+        exclude '*.apk'
+    }
+    dexOptions {
+        jumboMode true
+        incremental false
+    }
+    lintOptions{
+        abortOnError false
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    //    implementation rootProject.ext.dependencies["appcompat-v7"]
+    //    compile rootProject.ext.dependencies["design"]
+    //    compile 'com.android.support:appcompat-v7:26.0.0'
+    //    compile 'com.android.support:design:26.0.0'
+    compile 'com.android.support:appcompat-v7:26.0.0-alpha1'
+    compile 'com.android.support:design:26.0.0-alpha1'
+}

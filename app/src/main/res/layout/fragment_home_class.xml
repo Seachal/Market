@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFF"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeClassFragment">
+
+    <include
+        android:id="@+id/titleBar"
+        layout="@layout/title_bar" />
+
+    <fragment
+        android:id="@+id/fragment_leftTabClass"
+        class="com.dajukeji.hslz.fragment.TabHomeClassFragment"
+        android:layout_width="102dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="1px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleBar" />
+
+    <fragment
+        class="com.dajukeji.hslz.fragment.SubClassListFragment"
+        android:id="@+id/fragment_rightSubClassList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1px"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/fragment_leftTabClass"
+        app:layout_constraintTop_toBottomOf="@+id/titleBar" />
+</android.support.constraint.ConstraintLayout>

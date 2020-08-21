@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@id/title_bar_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@color/title_bar_bg_color">
+
+        <RelativeLayout
+            android:id="@id/title_bar_return"
+            android:layout_width="@dimen/title_bar_height"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:layout_width="@dimen/title_bar_return"
+                android:layout_height="@dimen/title_bar_return"
+                android:src="@drawable/icon_return"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@id/title_bar_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/y140"
+            android:layout_marginRight="@dimen/y140"
+            android:layout_centerInParent="true"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="门店详情"
+            android:textColor="@color/title_bar_title_color"
+            android:textSize="@dimen/title_bar_text_size"/>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@id/title_bar_notice"
+            android:layout_width="@dimen/title_bar_height"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:layout_width="@dimen/title_bar_return"
+                android:layout_height="@dimen/title_bar_return"
+                android:src="@mipmap/help"
+                android:layout_centerInParent="true"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/title_bar_right_rl"
+            android:layout_width="@dimen/title_bar_height"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:background="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/title_bar_right_iv"
+                android:layout_width="@dimen/title_bar_return"
+                android:layout_height="@dimen/title_bar_return"
+                android:src="@drawable/icon_return"
+                android:layout_centerInParent="true" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/title_bar_right_rl_tt"
+            android:layout_width="@dimen/title_bar_height"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:background="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:id="@+id/title_bar_right_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:textSize="@dimen/title_bar_text_size"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/line_gray_color"/>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/content_layout">
+
+        <android.support.design.widget.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:paddingTop="@dimen/y50">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y290"
+                app:layout_scrollFlags="scroll|enterAlwaysCollapsed">
+                <ImageView
+                    android:id="@+id/brand_store_icon"
+                    android:layout_width="@dimen/x110"
+                    android:layout_height="@dimen/y110"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:layout_marginTop="@dimen/y30"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/goods" />
+
+                <TextView
+                    android:id="@+id/brand_item_store_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_alignTop="@+id/brand_store_icon"
+                    android:layout_marginLeft="@dimen/x30"
+                    android:textColor="@color/tabUnselected"
+                    android:layout_toRightOf="@+id/brand_store_icon"
+                    android:textSize="15sp"
+                    />
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/store_tag_ll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/brand_item_store_name"
+                    android:layout_alignStart="@+id/brand_item_store_name"
+                    android:layout_below="@+id/brand_item_store_name"
+                    android:layout_marginTop="@dimen/y15"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/store_type"
+                        android:layout_width="@dimen/x160"
+                        android:layout_height="@dimen/y44"
+                        android:gravity="center"
+                        android:background="@drawable/shape_favorite_shop_des"
+                        android:textColor="@color/redOrange"
+                        android:textSize="10sp"
+                        android:text="旗舰店"
+                        />
+                    <TextView
+                        android:id="@+id/store_level"
+                        android:layout_width="@dimen/x160"
+                        android:layout_height="@dimen/y44"
+                        android:layout_marginLeft="@dimen/x20"
+                        android:layout_marginRight="@dimen/x20"
+                        android:gravity="center"
+                        android:background="@drawable/shape_favorite_shop_des"
+                        android:textColor="@color/redOrange"
+                        android:textSize="10sp"
+                        android:text="良心商家"
+                        />
+                    <TextView
+                        android:id="@+id/store_speed"
+                        android:layout_width="@dimen/x160"
+                        android:layout_height="@dimen/y44"
+                        android:gravity="center"
+                        android:background="@drawable/shape_favorite_shop_des"
+                        android:textColor="@color/redOrange"
+                        android:textSize="10sp"
+                        android:text="飞行速度"
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_alignBottom="@+id/brand_store_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/x50"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/customer_service_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="@dimen/x50"
+                            android:layout_height="@dimen/y50"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/customer_service" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/y20"
+                            android:text="客服"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="@dimen/y50"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/x40"
+                        android:layout_marginRight="@dimen/x40"
+                        android:background="@color/gray_line" />
+
+                    <LinearLayout
+                        android:id="@+id/collect_store_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/collect_store_iv"
+                            android:layout_width="@dimen/x50"
+                            android:layout_height="@dimen/y50"
+                            android:src="@drawable/icon_collection_star" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/y20"
+                            android:text="收藏"
+                            android:textSize="15sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/store_dis_tt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/brand_store_icon"
+                    android:layout_below="@+id/brand_store_icon"
+                    android:layout_marginLeft="@dimen/x140"
+                    android:layout_marginTop="@dimen/y30"
+                    android:layout_marginBottom="@dimen/y30"
+                    android:lines="1"
+                    android:textColor="@color/exchange_reason"
+                    android:textSize="16sp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2px"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/gray_line"/>
+            </RelativeLayout>
+
+            <!--<android.support.design.widget.TabLayout-->
+                <!--android:id="@+id/good_class_tab"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/y100"-->
+                <!--android:background="#fff"-->
+                <!--app:tabIndicatorColor="#fd6909"-->
+                <!--app:tabSelectedTextColor="#fd6909"-->
+                <!--app:tabTextAppearance="@style/MyTabLayoutTextAppearance"-->
+                <!--app:tabTextColor="#000" />-->
+            <android.support.design.widget.TabLayout
+                android:id="@+id/good_class_tab"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/y100"
+                android:background="#fff"
+                app:tabIndicatorColor="#fd6909"
+                app:tabSelectedTextColor="#fd6909"
+                app:tabTextAppearance="@style/MyTabLayoutTextAppearance"
+                app:tabTextColor="#000"/>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

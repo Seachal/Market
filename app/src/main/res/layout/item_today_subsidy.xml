@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y500"
+    android:paddingTop="@dimen/y50"
+    android:paddingLeft="@dimen/x60"
+    android:background="#fff">
+
+    <ImageView
+        android:id="@+id/pict_url"
+        android:layout_width="@dimen/x400"
+        android:layout_height="@dimen/y400"
+        android:scaleType="fitXY"
+        android:src="@drawable/goods" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/x50"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/item_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="@dimen/x30"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="南疏林地史蒂史蒂夫"
+            android:textColor="@color/fontBlack"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_subsidy_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/y5"
+            android:textColor="@color/redOrange"
+            android:text=""
+            />
+        <LinearLayout
+            android:id="@+id/layout_surplus"
+            android:layout_marginLeft="18dp"
+            android:layout_width="@dimen/x256"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bar_color"
+            android:orientation="vertical"
+            android:padding="1sp">
+
+            <com.dajukeji.hslz.view.MyProgressBar
+                android:id="@+id/surplus_pro"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="13dp"
+                android:max="100"
+                android:progressDrawable="@drawable/progress_bar_color"
+                android:visibility="visible" />
+        </LinearLayout>
+        <android.support.v4.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            />
+
+
+
+        <LinearLayout
+            android:id="@+id/discount_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/y40"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    >
+                    <TextView
+                        android:id="@+id/final_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="券 ￥135.00"
+                        android:textColor="#FC3D42"
+                        android:layout_marginLeft="18dp"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                    <!--<TextView-->
+                        <!--android:layout_marginLeft="8dp"-->
+                        <!--android:id="@+id/price"-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:text="￥988.00"-->
+                        <!--android:textColor="#d0d0d0"-->
+                        <!--android:textSize="10dp"-->
+                        <!--android:textStyle="bold" />-->
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+            <TextView
+                android:id="@+id/do_immediately"
+                android:layout_width="60dp"
+                android:layout_height="22dp"
+                android:layout_marginRight="@dimen/x30"
+                android:background="@drawable/shape_goods_discount1"
+                android:gravity="center"
+                android:text="去评选"
+                android:textColor="@color/white"
+                android:textSize="13sp" />
+
+
+        </LinearLayout>
+        <android.support.v4.widget.Space
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5sp"
+                android:background="@color/lineGray"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

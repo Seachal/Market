@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/y30">
+
+        <TextView
+            android:id="@+id/item_refund_list_totalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="实付款：￥178.00"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/item_refund_list_totalNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="共1件"
+                android:textSize="16sp"
+                android:textColor="@color/black"/>
+
+            <ImageView
+                android:layout_width="@dimen/x40"
+                android:layout_height="@dimen/y60"
+                android:src="@drawable/right_arrow"
+                android:layout_alignTop="@id/item_refund_list_totalNum"
+                android:layout_alignBottom="@id/item_refund_list_totalNum"
+                android:layout_marginLeft="@dimen/x20"
+                android:layout_toRightOf="@id/item_refund_list_totalNum"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y1"
+        android:background="@color/line_gray_color"/>
+
+    <LinearLayout
+        android:id="@+id/item_refund_list_bottom_linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/y20"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/y30"
+        android:paddingLeft="@dimen/x30"
+        android:paddingRight="@dimen/x30"
+        android:paddingTop="@dimen/y30">
+
+        <TextView
+            android:id="@+id/item_refund_list_checkLogistics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_order_button_normal"
+            android:text="@string/text_check_logistics"
+            android:textColor="@color/tabUnselected"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/item_refund_list_applyAfterSale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x60"
+            android:background="@drawable/bg_order_button_orange"
+            android:text="@string/text_apply_after_sale"
+            android:textColor="@color/theme_orange_color"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

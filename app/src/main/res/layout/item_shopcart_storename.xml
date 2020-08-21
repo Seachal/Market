@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/y100"
+    android:orientation="horizontal"
+    android:background="#ffffff">
+    <View
+        android:id="@+id/decoration_view"
+        android:layout_width="match_parent"
+        android:layout_height="10px"
+        android:layout_alignParentTop="true"
+        android:background="@color/indexButtonWhite"/>
+    <ImageView
+        android:id="@+id/store_icon"
+        android:layout_width="@dimen/x42"
+        android:layout_height="@dimen/y42"
+        android:layout_centerVertical="true"
+        android:src="@drawable/store_icon"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x30"/>
+
+    <TextView
+        android:id="@+id/store_name_tt"
+        android:layout_toRightOf="@+id/store_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:text="konka康佳专卖店"/>
+    
+    <ImageView
+        android:layout_toRightOf="@+id/store_name_tt"
+        android:layout_centerVertical="true"
+        android:layout_width="@dimen/x24"
+        android:layout_height="@dimen/y40"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/x20"
+        android:src="@drawable/right_arrow"
+        android:scaleType="fitXY"/>
+</RelativeLayout>

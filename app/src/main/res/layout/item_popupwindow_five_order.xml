@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/y120">
+
+        <ImageView
+            android:id="@+id/group_by_people_head_icon"
+            android:layout_width="@dimen/x40"
+            android:layout_height="@dimen/y40"
+            android:layout_centerVertical="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/group_by_people_head_icon"
+            android:layout_marginLeft="@dimen/x20"
+            >
+            <TextView
+                android:id="@+id/group_by_people_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="绿茶" />
+            <TextView
+                android:id="@+id/read_time_out_tt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/y10"
+                android:text="剩余23:22:33"
+                android:textSize="10sp"
+                />
+        </LinearLayout>
+        <Button
+            android:id="@+id/go_group_by_button"
+            android:layout_width="@dimen/x140"
+            android:layout_height="@dimen/y65"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/fillet_red_button"
+            android:text="去拼单" />
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginRight="@dimen/x30"-->
+            <!--android:layout_toLeftOf="@+id/go_group_by_button">-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/lack_how_much_groupDown"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="还差1人拼成"-->
+                <!--android:textSize="10sp"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_marginTop="@dimen/y25"/>-->
+
+
+        <!--</RelativeLayout>-->
+        <TextView
+            android:id="@+id/lack_how_much_groupDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="还差1人拼成"
+            android:textSize="10sp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/go_group_by_button"
+            android:layout_marginRight="@dimen/x30"/>
+    </RelativeLayout>
+</LinearLayout>
